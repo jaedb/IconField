@@ -1,19 +1,19 @@
 {
-	"name": "plasticstudio/dev-tools",
+	"name": "jaedb/iconfield",
     "type": "silverstripe-vendormodule",
-	"description": "Development tools for SilverStripe",
-	"homepage": "http://plasticstudio.co.nz",
+	"description": "Icon field for SilverStripe",
+	"homepage": "http://jamesbarnsley.co.nz",
 	"keywords": ["silverstripe"],
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
 			"name": "James Barnsley",
-			"homepage": "http://plasticstudio.co.nz",
-			"email": "james@plasticstudio.co.nz"
+			"homepage": "http://jamesbarnsley.co.nz",
+			"email": "james@barnsley.co.nz"
 		}
 	],
 	"support": {
-		"issues": "http://github.com/plasticstudio/dev-tools/issues"
+		"issues": "http://github.com/jaedb/iconfield/issues"
 	},
     "extra": {
         "expose": [
