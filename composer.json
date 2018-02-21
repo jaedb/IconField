@@ -17,9 +17,7 @@
 	},
     "extra": {
         "expose": [
-            "css",
-            "js",
-            "images"
+            "css"
         ]
     },
 	"require": {
