@@ -13,7 +13,12 @@ Simplifies the use of icons in a way content authors can set icons without inter
 
 # Usage
 
-* Set your `$db` field to type `Icon` (eg `'PageIcon' => 'Icon'`)
+* Import the required classes:
+```
+use Jaedb\IconField\Icon;
+use Jaedb\IconField\IconField;
+```
+* Set your `$db` field to type `Icon` (eg `'PageIcon' => Icon::class`)
 * `IconSelectField::create($name, $title, $iconFolder)`
 * `$name` is the database field as defined in your class
 * `$title` is the label for this field
