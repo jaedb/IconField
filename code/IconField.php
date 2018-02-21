@@ -48,7 +48,6 @@ class IconField extends OptionsetField {
 		
 		$this->source = $icons;		
 		Requirements::css('/resources/jaedb/iconfield/css/IconSelectField.css');
-		Requirements::javascript('/resources/jaedb/iconfield/js/IconSelectField.js');
 	}
 	
 

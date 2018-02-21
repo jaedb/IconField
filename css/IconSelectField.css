@@ -1,5 +1,5 @@
 
-.field.iconselect ul {
+.field.icon ul {
 	margin: 0;
 	padding: 0;
 	border-radius: 4px;
@@ -7,15 +7,15 @@
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQYV2N89+7dfwY0ICQkxIguxjgUFKI7GsTH5m4M3w1ChQDSWCb4tR+WrAAAAABJRU5ErkJggg==");
 }
 
-.field.iconselect .option {
+.field.icon .option {
 	display: inline-block;
 }
 
-.field.iconselect .option input {
+.field.icon .option input {
 	display: none;
 }
 
-.field.iconselect .option label {
+.field.icon .option label {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -28,21 +28,21 @@
 	position: relative;
 }
 
-.field.iconselect .option label:hover {
+.field.icon .option label:hover {
 	background: rgba(0,0,0,0.1);
 }
 
-.field.iconselect .option label img {
+.field.icon .option label img {
 	max-width: 100%;
 	max-height: 100%;
 }
 
-.field.iconselect .option input:checked + label {
+.field.icon .option input:checked + label {
 	background-color: #3875d7;
 	background-image: -moz-linear-gradient(center top , #3875d7 20%, #2a62bc 90%);
 }
 
-.field.iconselect .option:first-child label:after {
+.field.icon .option:first-child label:after {
 	content: 'No icon';
 	display: block;
 	color: #000000;
@@ -55,6 +55,6 @@
 	right: 0;
 }
 
-.field.iconselect .option input:checked + label:after {
+.field.icon .option input:checked + label:after {
 	color: #FFFFFF;
 }
