@@ -5,6 +5,7 @@ use DirectoryIterator;
 use SilverStripe\View\Requirements;
 use SilverStripe\View\ArrayData;
 use SilverStripe\ORM\ArrayList;
+use SilverStripe\Forms\FormField;
 use SilverStripe\Forms\OptionsetField;
 use SilverStripe\Core\Config\Config;
 
@@ -88,6 +89,7 @@ class IconField extends OptionsetField {
 		));
 
 		return $this->customise($properties)->renderWith('IconField');
+        //return FormField::Field($properties);
 	}
 
 	/**
@@ -95,6 +97,11 @@ class IconField extends OptionsetField {
 	 **/
     public function extraClass(){
         $classes = array('field', 'IconField', parent::extraClass());
+
+		if (($key = array_search("icon", $classes)) !== false) {
+		    unset($classes[$key]);
+		}
+
         return implode(' ', $classes);
     }
 }
