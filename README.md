@@ -5,10 +5,9 @@ Simplifies the use of icons in a way content authors can set icons without inter
 ![IconSelectField](https://raw.githubusercontent.com/jaedb/IconField/master/screenshot.jpg)
 
 
-# Dependencies
+# Requirements
 
 * SilverStripe 4
-* Betterbuttons
 
 
 # Usage
