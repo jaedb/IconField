@@ -47,7 +47,7 @@ class IconField extends OptionsetField {
 		}
 		
 		$this->source = $icons;		
-		Requirements::css('/resources/jaedb/iconfield/css/IconSelectField.css');
+		Requirements::css('/resources/jaedb/iconfield/css/IconField.css');
 	}
 	
 
@@ -87,8 +87,16 @@ class IconField extends OptionsetField {
 			'Options' => ArrayList::create($options)
 		));
 
-		return $this->customise($properties)->renderWith('IconSelectField');
+		return $this->customise($properties)->renderWith('IconField');
 	}
+
+	/**
+	 * Handle extra classes
+	 **/
+    public function extraClass(){
+        $classes = array('field', 'IconField', parent::extraClass());
+        return implode(' ', $classes);
+    }
 }
 
 
