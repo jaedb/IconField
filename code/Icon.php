@@ -92,6 +92,6 @@ class Icon extends DBField {
 	 * @see DBField::scaffoldFormField()
 	 */
 	public function scaffoldFormField($title = null, $params = null) {
-		return IconSelectField::create($this->name, $title);
+		return IconField::create($this->name, $title);
 	}
 }
