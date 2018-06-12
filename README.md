@@ -2,7 +2,7 @@
 
 Simplifies the use of icons in a way content authors can set icons without interfering with the asset library. Instead, the web developer provides the icon set which the end-user can use but not manipulate.
 
-![IconSelectField](https://raw.githubusercontent.com/jaedb/IconField/master/screenshot.jpg)
+![IconField](https://raw.githubusercontent.com/jaedb/IconField/master/screenshot.jpg)
 
 
 # Requirements
@@ -18,7 +18,7 @@ use Jaedb\IconField\Icon;
 use Jaedb\IconField\IconField;
 ```
 * Set your `$db` field to type `Icon` (eg `'PageIcon' => Icon::class`)
-* `IconSelectField::create($name, $title, $iconFolder)`
+* `IconField::create($name, $title, $iconFolder)`
 * `$name` is the database field as defined in your class
 * `$title` is the label for this field
 * `$iconFolder` (optional) defines the directory where your icons can be found. Defaults to `/site/icons`.
