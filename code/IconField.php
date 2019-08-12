@@ -63,8 +63,9 @@ class IconField extends OptionsetField {
 		$options = array();
 
 		// Add a clear option
+		$itemID = $this->ID() . '_' . preg_replace('/[^a-zA-Z0-9]/', '', 'none');
 		$options[] = ArrayData::create(array(
-			'ID' => 'none',
+			'ID' => $itemID,
 			'Name' => $this->name,
 			'Value' => '',
 			'Title' => '',
