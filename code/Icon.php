@@ -1,13 +1,21 @@
 <?php
 
 namespace Jaedb\IconField;
-use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\DB;
+use Jaedb\IconField\Icon;
+use SilverStripe\Dev\Debug;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\ORM\FieldType\DBField;
+use Configurable;
 
 class Icon extends DBField {
 
     function requireField() {
         DB::require_field($this->tableName, $this->name, 'Varchar(1024)');
+    }
+    
+    public function wrapSvg() {
+        return true;
     }
 
     private static $casting = array(
@@ -84,7 +92,16 @@ class Icon extends DBField {
 		}
 
 		$svg = file_get_contents($filePath);
-		return '<span class="icon svg">'.$svg.'</span>';
+		
+		
+		$wrapSVG = $this->wrapSvg();		
+		$this->extend('updateWrapSVG', $wrapSVG);
+
+		if($wrapSVG){
+			$svg ='<span class="icon svg">'.$svg.'</span>';
+		}
+	
+		return $svg;
 	}
 
 	/**
