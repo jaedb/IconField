@@ -1,12 +1,10 @@
 <?php
 
 namespace Jaedb\IconField;
+
 use SilverStripe\ORM\DB;
-use Jaedb\IconField\Icon;
-use SilverStripe\Dev\Debug;
-use SilverStripe\Core\Config\Config;
+use Jaedb\IconField\IconField;
 use SilverStripe\ORM\FieldType\DBField;
-use Configurable;
 
 class Icon extends DBField {
 
