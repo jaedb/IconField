@@ -1,8 +1,8 @@
 {
-	"name": "jaedb/iconfield",
+	"name": "plasticstudio/iconfield",
     "type": "silverstripe-vendormodule",
-	"description": "Icon field for SilverStripe",
-	"homepage": "http://jamesbarnsley.co.nz",
+	"description": "Icon field for SilverStripe - forked from jaedb/iconfield",
+	"homepage": "http://plasticstudio.co.nz/",
 	"keywords": ["silverstripe"],
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -13,7 +13,7 @@
 		}
 	],
 	"support": {
-		"issues": "http://github.com/jaedb/iconfield/issues"
+		"issues": "http://github.com/PlasticStudio/IconField"
 	},
     "extra": {
         "expose": [
