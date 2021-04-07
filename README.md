@@ -1,3 +1,8 @@
+# Install
+
+`composer require plasticstudio/iconfield`
+
+
 # Description
 
 Simplifies the use of icons in a way content authors can set icons without interfering with the asset library. Instead, the web developer provides the icon set which the end-user can use but not manipulate.
