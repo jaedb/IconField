@@ -1,7 +1,7 @@
 {
 	"name": "plasticstudio/iconfield",
     "type": "silverstripe-vendormodule",
-	"description": "Icon field for SilverStripe - forked from jaedb/iconfield",
+	"description": "Icon field for Silverstripe - forked from jaedb/iconfield",
 	"homepage": "http://plasticstudio.co.nz/",
 	"keywords": ["silverstripe"],
 	"license": "BSD-3-Clause",
@@ -10,6 +10,11 @@
 			"name": "James Barnsley",
 			"homepage": "http://jamesbarnsley.co.nz",
 			"email": "james@barnsley.co.nz"
+		},
+		{
+			"name": "Jeremy Cole",
+			"homepage": "http://psdigital.co.nz",
+			"email": "jeremy@psdigital.co.nz"
 		}
 	],
 	"support": {
