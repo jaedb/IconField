@@ -29,9 +29,8 @@ class IconField extends OptionsetField
     {
         parent::__construct($name, $title, []);
 
-        if (!$sourceFolder) {
-            $sourceFolder = Config::inst()->get('IconField', 'icons_directory');
-        }
+        $sourceFolder = $this->getSourceFolder($sourceFolder);
+
         // not entirely sure we need to run this through resolvePath
         // TODO: further testing to see if it's necessary
         $sourcePath = ModuleResourceLoader::singleton()->resolvePath($sourceFolder);
@@ -59,6 +58,18 @@ class IconField extends OptionsetField
         
         $this->source = $icons;
         Requirements::css('plasticstudio/iconfield:css/IconField.css');
+    }
+
+    /**
+     * Gets the icons folder name
+     *
+     * @return string
+     */
+    public function getSourceFolder($sourceFolder)
+    {
+        return (!empty($sourceFolder))
+            ? $sourceFolder
+            : Config::inst()->get(__CLASS__, 'icons_directory');
     }
     
 
